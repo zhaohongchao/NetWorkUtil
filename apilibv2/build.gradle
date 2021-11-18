@@ -1,11 +1,9 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
-    id 'maven-publish'
 }
 
 android {
-
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
     defaultConfig {
@@ -41,29 +39,4 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
     implementation 'joda-time:joda-time:2.10.6'
 
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = "com.zhc.ApiUtil"
-                artifactId = "ApiUtil"
-                version = "1.0.1"
-            }
-        }
-        repositories {
-            maven {
-                allowInsecureProtocol true
-                name = "maven-releases"
-                url = "https://gitee.com/zhao_hong_chao/ApiUtil/master"
-                credentials {
-                    username = '13699161815'
-                    password = '1234568x'
-                }
-            }
-        }
-
-    }
 }

@@ -53,6 +53,17 @@ afterEvaluate {
                 version = "1.0.1"
             }
         }
+        repositories {
+            maven {
+                allowInsecureProtocol true
+                name = "maven-releases"
+                url = "https://raw.githubusercontent.com/zhaohongchao/ApiUtil/master"
+                credentials {
+                    username = '13699161815'
+                    password = '1234568x'
+                }
+            }
+        }
 
     }
 }

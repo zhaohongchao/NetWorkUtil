@@ -12,7 +12,7 @@ buildscript {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url 'https://repository.mulesoft.org/nexus/content/repositories/public/' }
-        maven { url 'https://maven.xzlglobal.com/repository/maven-releases/'}
+        maven { url "https://raw.githubusercontent.com/zhaohongchao/ApiUtil/master" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0-beta04"
@@ -39,6 +39,7 @@ allprojects {
         maven { url "https://jitpack.io" }
         maven { url 'https://repository.mulesoft.org/nexus/content/repositories/public/' }
         maven { url 'https://maven.xzlglobal.com/repository/maven-releases/'}
+        maven { url "https://raw.githubusercontent.com/zhaohongchao/ApiUtil/master" }
     }
 }
 task clean(type: Delete) {

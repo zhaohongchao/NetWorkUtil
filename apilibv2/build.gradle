@@ -57,7 +57,7 @@ afterEvaluate {
             maven {
                 allowInsecureProtocol true
                 name = "maven-releases"
-                url = "https://raw.githubusercontent.com/zhaohongchao/ApiUtil/master"
+                url = "https://gitee.com/zhao_hong_chao/ApiUtil/master"
                 credentials {
                     username = '13699161815'
                     password = '1234568x'

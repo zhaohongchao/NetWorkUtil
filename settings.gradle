@@ -1,0 +1,3 @@
+rootProject.name = "ApiDemo2"
+include ':app'
+include ':apilibv2'
